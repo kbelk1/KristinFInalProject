@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/cool">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/app_name"
+            android:textSize="30sp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            />
+
+        <ImageButton
+            android:id="@+id/button_left"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/water"
+            android:layout_alignTop="@+id/button_right"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="12dp" />
+
+        <ImageButton
+            android:id="@+id/button_right"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@mipmap/food"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/cool"
+        android:layout_alignParentBottom="true"
+
+        >
+
+
+
+
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:text="Healthy Recipes"
+            android:textColor="@color/black"
+            android:background="@android:color/white"/>
+
+        <Button
+            android:id="@+id/custom_dialog_bt2"
+            android:onClick="onClick"
+            android:layout_width="0dp"
+            android:layout_margin="6dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:text="Motivate Yourself"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="0dp"
+            android:layout_margin="6dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Service"
+            android:textColor="@color/black"
+            android:background="@android:color/white"/>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_above="@+id/tool_bar"
+        android:layout_below="@id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        >
+
+    </ListView>
+
+    <FrameLayout
+        android:id="@+id/main_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar"
+        android:layout_above="@+id/tool_bar"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/title"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/main_timer_bt"
+                android:layout_width="100dp"
+                android:layout_height="71dp"
+                android:text="Timer"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/quiz_health_bt"
+                android:layout_width="100dp"
+                android:layout_height="71dp"
+                android:text="Fitness"
+                android:textAllCaps="false"></Button>
+
+            <Button
+                android:id="@+id/main_anim_bt"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:text="Trainers"
+                android:textAllCaps="false" />
+
+
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/hw_4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="236dp"
+        android:layout_below="@+id/title_bar"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textAllCaps="false"/>
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textAllCaps="false"/>></LinearLayout>
+
+
+</RelativeLayout>

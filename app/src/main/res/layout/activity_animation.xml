@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_animation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="kristinfinalproject.aleademo.AnimationActivity">
+
+
+
+    <TextView
+        android:id="@+id/anim_tv"
+        android:layout_width="1150dp"
+        android:layout_height="200dp"
+        android:background="@mipmap/tran2"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_toEndOf="@+id/anim_tv3"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:background="@mipmap/train"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/anim_tv3"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="56dp"
+        android:layout_above="@+id/textView5"
+        android:layout_alignParentStart="true" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentTop="true"
+    android:id="@+id/linearLayout">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:id="@+id/anim_set"
+        android:text="set"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:id="@+id/anim_alpha"
+        android:text="alpha"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:id="@+id/anim_rotate"
+        android:text="rotate"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:id="@+id/anim_scale"
+        android:text="scale"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:id="@+id/anim_trans"
+        android:text="trans"/>
+
+
+
+</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Choose Your Personal Trainer"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginBottom="37dp"
+        android:id="@+id/textView5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

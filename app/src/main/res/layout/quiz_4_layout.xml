@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quiz 4 Title"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="36sp"
+        />
+
+    <Button
+        android:id="@+id/cancel_bt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textSize="36sp"/>
+    <Button
+        android:id="@+id/okay_bt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textSize="36sp"/>
+
+
+
+</LinearLayout>

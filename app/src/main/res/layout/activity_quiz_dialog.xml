@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="getExcersies"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="36sp"
+        />
+
+    <RadioGroup
+        android:id="@+id/rdg_quiz"
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_height="350dp">
+
+    <RadioButton
+        android:id="@+id/ex_rb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_vertical"
+        android:gravity="left|center_vertical"
+        android:text="Abdominals"
+        android:textSize="20dp"/>
+        />
+
+    <RadioButton
+        android:id="@+id/ex_rb2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_vertical"
+        android:gravity="left|center_vertical"
+        android:text="Arms"
+        android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/ex_rb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical"
+            android:gravity="left|center_vertical"
+            android:text="Back"
+            android:textSize="20dp"/>
+        />
+
+        <RadioButton
+            android:id="@+id/ex_rb4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical"
+            android:gravity="left|center_vertical"
+            android:text="Chest"
+            android:textSize="20dp"/>
+        />
+
+        <RadioButton
+            android:id="@+id/ex_rb5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical"
+            android:gravity="left|center_vertical"
+            android:text="Legs"
+            android:textSize="20dp"/>
+        />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/okay_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textColor="@android:color/black"
+
+        android:textSize="36sp"/>
+    <Button
+        android:id="@+id/cancel_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="Cancel"
+        android:textSize="36sp"/>
+
+
+
+
+</LinearLayout>
